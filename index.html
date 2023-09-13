@@ -1,13 +1,1446 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tween.ly</title>
-  </head>
-  <body>
-    <script>
-      window.location.replace("https://app.tween.ly");
-    </script>
-  </body>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Tweenly</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+    <nav class="navbar py-3 navbar-expand-lg navbar-dark bg-black-dark">
+        <div class="container px-4">
+            <a class="navbar-brand" href="https://tween.ly"><img src="assets/tweenly-logo.svg"></a>
+            <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>-->
+            <button id="menuToggle" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#solution">Solution</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div class="ml-auto d-flex menu-buttons">
+                    <a class="btn btn-link-cs" target="_blank" href="https://app.tween.ly/login">Log in</a>
+                    <a class="btn btn-primary-cs" target="_blank" href="https://app.tween.ly/signup">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-5">
+            <div class="row bg-light-blue gx-5 justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center headline-pd">
+                        <h1 class="display-5 text-white mb-2">Supporting broadcasting creativity</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img class="image-patern-desktop" src="assets/pattern.png">
+
+        <img class="image-patern-desktop-two" src="assets/pattern.png">
+
+        <div class="container px-5 my-3">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center my-5">
+                        <h3 class="mb-4">Modern HTML and JS animation tool</h3>
+                        <p class="lead text-white mb-4">Tweenly was developed by Stream Circle to provide a broadcasting
+                            graphical tool that is understandable for every creative person. This web application
+                            solution with a powerful editor at its core focuses on the production of graphics in HTML
+                            format to enrich any linear channel operations. With its cloud storage, shared workspaces,
+                            and a global graphics store, Tweenly strives for more than just another HTML editor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Features section-->
+    <section class="bg-dark" id="features">
+        <div class="container px-5">
+            <div class="row gx-5 bk-light-grey">
+                <div class="col-lg-3 mb-5 mb-lg-0 text-center">
+                    <img class="mb-3" src="assets/featured-icon-1.svg">
+                    <p class="text-white">Powerful<br>WYSIWYG editor</p>
+                </div>
+                <div class="col-lg-3 mb-5 mb-lg-0 text-center">
+                    <img class="mb-3" src="assets/featured-icon-2.svg">
+                    <p class="text-white">Personal cloud storage<br> with open API</p>
+                </div>
+                <div class="col-lg-3 mb-5 mb-lg-0 text-center">
+                    <img class="mb-3" src="assets/featured-icon-3.svg">
+                    <p class="text-white">Global graphics publishing<br>and purchasing</p>
+                </div>
+                <div class="col-lg-3 mb-5 mb-sm-0 text-center">
+                    <img class="mb-3" src="assets/featured-icon-4.svg">
+                    <p class="text-white">Collaboration<br>within shared workspaces</p>
+                </div>
+            </div>
+        </div>
+        <div class="container px-5">
+            <div class="row">
+                <div class="divider"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animation section-->
+    <section class="pt-5 bg-dark" id="solution">
+        <div class="container px-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-10">
+                    <div class="text-center">
+                        <span class="subheadline-sc">Solution</span>
+                        <h3 class="mb-5 mt-3">Get more of your animation process</h3>
+                        <img class="width-image" src="assets/animation-proces.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="py-5 bg-dark " id="benefits">
+        <div class="container px-5">
+            <div class="row gx-5">
+                <div class="col-lg-6 mb-5 mb-lg-0 text-center pt-3">
+                    <img class="icon-bg mb-3" src="assets/solution-1.svg">
+                    <h4 class="text-white">Editor</h4>
+                    <p class="text-white">The editor scene consists of shape objects, images, and texts organized and
+                        nested in hierarchical structures and styled via CSS. Interactive timeline and scene preview
+                        provide real-time feedback on the appearance of all animated objects in various time stamps.</p>
+                </div>
+                <div class="col-lg-6 mb-5 mb-lg-0 text-center pt-3">
+                    <img class="icon-bg mb-3" src="assets/solution-2.svg">
+                    <h4 class="text-white">Workspaces</h4>
+                    <p class="text-white">Creating rich brand graphics doesn't have to be a one-man show. Workspaces
+                        were designed to make graphics accessible to all its members for collaborative creation and
+                        management.</p>
+                </div>
+                <div class="col-lg-6 mb-5 mb-lg-0 text-center pt-3">
+                    <img class="icon-bg mb-3" src="assets/solution-3.svg">
+                    <h4 class="text-white">Gallery</h4>
+                    <p class="text-white">Tweenly comes with cloud storage for access to the graphics on your personal
+                        account. For graphics transfer automation, the gallery can be integrated with content management
+                        solutions through API.</p>
+                </div>
+                <div class="col-lg-6 mb-5 mb-sm-0 text-center pt-3">
+                    <img class="icon-bg mb-3" src="assets/solution-4.svg">
+                    <h4 class="text-white">Store</h4>
+                    <p class="text-white">You may overflow with creativity worth sharing or, on the contrary, look for
+                        attractive graphical outputs of others to use for your own purposes. The store provides space
+                        for the meeting of offers and demands of globally available graphics. Some are free, others are
+                        valued with a certain amount of our coin transaction system.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container px-5">
+            <div class="row">
+                <div class="divider"></div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Pricing section desktop -->
+    <section class="bg-dark pt-5 view-desktop" id="pricing">
+        <div class="container px-5">
+            <div class="text-center mb-5">
+                <span class="subheadline-sc">Pricing</span>
+                <h3 class="mb-3 mt-3">Plans that fit your scale</h3>
+                <p class="text-white lead mb-0">Simple, transparent pricing that grows with you.</p>
+            </div>
+            <div class="col-sm-12">
+
+                <ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
+                    <div class="cover-tabs">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Monthly</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Yearly<span>Save 20%</span></button>
+                        </li>
+                    </div>
+                </ul>
+
+                <div class="tab-content pt-5" id="pills-tabContent">
+                    <div class="text-white tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <div class="table-responsive pricing-options_table">
+                            <table class="table 
+                    pricing-options-table__table text-white">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>
+                                            <div class="pricing-option__header">
+                                                <img class="mb-3" src="assets/pricing-icon-1.svg">
+                                                <span>Free</span>
+                                                <div class="h5">FREE</div>
+                                                <p>Solution exploration.</p>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="pricing-option__header pricing-option_popular">
+                                                <img class="mb-3" src="assets/pricing-icon-2.svg">
+                                                <span>Individual</span>
+                                                <div class="h5">$15/month</div>
+                                                <p>Private use</p>
+                                            </div>
+                                        </th>
+                                        <th class="highlight-table highlight-table-top">
+                                            <div class="pricing-option__header">
+                                                <img class="mb-3" src="assets/pricing-icon-3.svg">
+                                                <span>Business</span>
+                                                <div class="h5">$20/month</div>
+                                                <p>Advanced collaboration.</p>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="pricing-option__header">
+                                                <img class="mb-3" src="assets/pricing-icon-4.svg">
+                                                <span>Enterprise</span>
+                                                <div class="h5">$60/month</div>
+                                                <p>Unlimited features.</p>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="pricing-options-table__title head-title-tb">Graphics</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="highlight-table"></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="tb-light-gray">
+                                        <td class="pricing-options-table__title">HTML export</td>
+                                        <td>-</td>
+                                        <td><img src="assets/check-circle.svg"></td>
+                                        <td class="highlight-table"><img src="assets/check-circle.svg"></td>
+                                        <td><img src="assets/check-circle.svg"></td>
+                                    </tr>
+                                    <tr class="tb-dark-gray">
+                                        <td class="pricing-options-table__title">Gallery</td>
+                                        <td></i><img src="assets/check-circle.svg"></td>
+                                        <td><img src="assets/check-circle.svg"></td>
+                                        <td class="highlight-table"><img src="assets/check-circle.svg"></td>
+                                        <td><img src="assets/check-circle.svg"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pricing-options-table__title head-title-tb">Workspaces</td>
+                                        <td></i></td>
+                                        <td></i></td>
+                                        <td class="highlight-table"></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="tb-light-gray">
+                                        <td class="pricing-options-table__title">Private workspace</td>
+                                        <td></i><img src="assets/check-circle.svg"></td>
+                                        <td></i><img src="assets/check-circle.svg"></td>
+                                        <td class="highlight-table"><img src="assets/check-circle.svg"></td>
+                                        <td><img src="assets/check-circle.svg"></td>
+                                    </tr>
+                                    <tr class="tb-dark-gray">
+                                        <td class="pricing-options-table__title">Shared workspaces</td>
+                                        <td></i>-</td>
+                                        <td></i>1</td>
+                                        <td class="highlight-table">1</td>
+                                        <td>Unlimited</td>
+                                    </tr>
+                                    <tr class="tb-light-gray">
+                                        <td class="pricing-options-table__title">Members per workspace</td>
+                                        <td></i>-</td>
+                                        <td></i>1</td>
+                                        <td class="highlight-table">2</td>
+                                        <td>Unlimited</td>
+                                    </tr>
+                                    <tr class="tb-dark-gray">
+                                        <td class="pricing-options-table__title">Wallet per workspace</td>
+                                        <td></i>-</td>
+                                        <td></i><img src="assets/check-circle.svg"></td>
+                                        <td class="highlight-table"><img src="assets/check-circle.svg"></td>
+                                        <td><img src="assets/check-circle.svg"></td>
+                                    </tr>
+                                    <tr class="tb-light-gray">
+                                        <td class="pricing-options-table__title">Coins earning</td>
+                                        <td></i>-</td>
+                                        <td></i>-</td>
+                                        <td class="highlight-table"><img src="assets/check-circle.svg"></td>
+                                        <td><img src="assets/check-circle.svg"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pricing-options-table__title head-title-tb">Store</td>
+                                        <td></i></td>
+                                        <td></i></td>
+                                        <td class="highlight-table"></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="tb-light-gray">
+                                        <td class="pricing-options-table__title">Graphics publishing</td>
+                                        <td></i>Free only</td>
+                                        <td></i>Free and paid</td>
+                                        <td class="highlight-table">Free and paid</td>
+                                        <td>Free and paid</td>
+                                    </tr>
+                                    <tr class="tb-dark-gray">
+                                        <td class="pricing-options-table__title">Graphics purchasing</td>
+                                        <td></i>Free only</td>
+                                        <td></i>Free and paid</td>
+                                        <td class="highlight-table">Free and paid</td>
+                                        <td>Free and paid</td>
+                                    </tr>
+                                    <tr class="tb-light-gray">
+                                        <td class="pricing-options-table__title">API accesss</td>
+                                        <td></i>-</td>
+                                        <td></i>-</td>
+                                        <td class="highlight-table highlight-table-bottom"><img
+                                                src="assets/check-circle.svg"></td>
+                                        <td><img src="assets/check-circle.svg"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="text-white tab-pane fade" id="pills-profile" role="tabpanel"
+                        aria-labelledby="pills-profile-tab">
+                        <div class="table-responsive pricing-options_table">
+                            <table class="table 
+                    pricing-options-table__table text-white">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>
+                                            <div class="pricing-option__header">
+                                                <img src="assets/pricing-icon-1.svg">
+                                                <span>Free</span>
+                                                <div class="h5">FREE</div>
+                                                <p>Solution exploration.</p>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="pricing-option__header pricing-option_popular">
+                                                <img src="assets/pricing-icon-2.svg">
+                                                <span>Individual</span>
+                                                <div class="h5">$144/year</div>
+                                                <p>Private use</p>
+                                            </div>
+                                        </th>
+                                        <th class="highlight-table highlight-table-top">
+                                            <div class="pricing-option__header">
+                                                <img src="assets/pricing-icon-3.svg">
+                                                <span>Business</span>
+                                                <div class="h5">$192/year</div>
+                                                <p>Advanced collaboration.</p>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="pricing-option__header">
+                                                <img src="assets/pricing-icon-4.svg">
+                                                <span>Enterprise</span>
+                                                <div class="h5">$576/year</div>
+                                                <p>Unlimited features.</p>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="pricing-options-table__title head-title-tb">Graphics</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="highlight-table"></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="tb-light-gray">
+                                        <td class="pricing-options-table__title">HTML export</td>
+                                        <td>-</td>
+                                        <td><img src="assets/check-circle.svg"></td>
+                                        <td class="highlight-table"><img src="assets/check-circle.svg"></td>
+                                        <td><img src="assets/check-circle.svg"></td>
+                                    </tr>
+                                    <tr class="tb-dark-gray">
+                                        <td class="pricing-options-table__title">Gallery</td>
+                                        <td></i><img src="assets/check-circle.svg"></td>
+                                        <td><img src="assets/check-circle.svg"></td>
+                                        <td class="highlight-table"><img src="assets/check-circle.svg"></td>
+                                        <td><img src="assets/check-circle.svg"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pricing-options-table__title head-title-tb">Workspaces</td>
+                                        <td></i></td>
+                                        <td></i></td>
+                                        <td class="highlight-table"></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="tb-light-gray">
+                                        <td class="pricing-options-table__title">Private workspace</td>
+                                        <td></i><img src="assets/check-circle.svg"></td>
+                                        <td></i><img src="assets/check-circle.svg"></td>
+                                        <td class="highlight-table"><img src="assets/check-circle.svg"></td>
+                                        <td><img src="assets/check-circle.svg"></td>
+                                    </tr>
+                                    <tr class="tb-dark-gray">
+                                        <td class="pricing-options-table__title">Shared workspaces</td>
+                                        <td></i>-</td>
+                                        <td></i>1</td>
+                                        <td class="highlight-table">1</td>
+                                        <td>Unlimited</td>
+                                    </tr>
+                                    <tr class="tb-light-gray">
+                                        <td class="pricing-options-table__title">Members per workspace</td>
+                                        <td></i>-</td>
+                                        <td></i>1</td>
+                                        <td class="highlight-table">2</td>
+                                        <td>Unlimited</td>
+                                    </tr>
+                                    <tr class="tb-dark-gray">
+                                        <td class="pricing-options-table__title">Wallet per workspace</td>
+                                        <td></i>-</td>
+                                        <td></i><img src="assets/check-circle.svg"></td>
+                                        <td class="highlight-table"><img src="assets/check-circle.svg"></td>
+                                        <td><img src="assets/check-circle.svg"></td>
+                                    </tr>
+                                    <tr class="tb-light-gray">
+                                        <td class="pricing-options-table__title">Coins earning</td>
+                                        <td></i>-</td>
+                                        <td></i>-</td>
+                                        <td class="highlight-table"><img src="assets/check-circle.svg"></td>
+                                        <td><img src="assets/check-circle.svg"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pricing-options-table__title head-title-tb">Store</td>
+                                        <td></i></td>
+                                        <td></i></td>
+                                        <td class="highlight-table"></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="tb-light-gray">
+                                        <td class="pricing-options-table__title">Graphics publishing</td>
+                                        <td></i>Free only</td>
+                                        <td></i>Free and paid</td>
+                                        <td class="highlight-table">Free and paid</td>
+                                        <td>Free and paid</td>
+                                    </tr>
+                                    <tr class="tb-dark-gray">
+                                        <td class="pricing-options-table__title">Graphics purchasing</td>
+                                        <td></i>Free only</td>
+                                        <td></i>Free and paid</td>
+                                        <td class="highlight-table">Free and paid</td>
+                                        <td>Free and paid</td>
+                                    </tr>
+                                    <tr class="tb-light-gray">
+                                        <td class="pricing-options-table__title">API accesss</td>
+                                        <td></i>-</td>
+                                        <td></i>-</td>
+                                        <td class="highlight-table highlight-table-bottom"><img
+                                                src="assets/check-circle.svg"></td>
+                                        <td><img src="assets/check-circle.svg"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!---Early banner -->
+        <div class="container pt-5 px-5">
+            <div class="row px-3">
+                <div class="col-lg-12 mb-5 mb-lg-0 py-5 text-center px-5 bk-light-blue">
+                    <span>Until the end of October</span>
+                    <h3 class="contact-headline">Early birds offer</h3>
+                    <p class="text-white">Create a free account and get full access to all features of Individual
+                        license. No credit card needed. Get started in 2 minutes.</p>
+                    <a class="btn btn-primary-white" target="_blank" href="https://app.tween.ly/signup">Sign up</a>
+                </div>
+            </div>
+        </div>
+        <!---Early banner end-->
+
+        <div class="container px-5">
+            <div class="row">
+                <div class="divider"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Pricing section mobile-->
+    <section class="bg-dark pt-5 view-mobile" id="pricing">
+        <div class="container px-5">
+            <div class="text-center mb-5">
+                <span class="subheadline-sc">Pricing</span>
+                <h3 class="mb-3 mt-3">Plans that fit your scale</h3>
+                <p class="text-white lead mb-0">Simple, transparent pricing that grows with you.</p>
+            </div>
+            <div class="col-sm-12">
+
+                <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                    <div class="cover-tabs">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home1" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Monthly</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile1" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Yearly<span>Save 20%</span></button>
+                        </li>
+                    </div>
+                </ul>
+
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="text-white tab-pane fade show active" id="pills-home1" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+
+                        <div class="my-5 mobile-content">
+
+                            <div class="pricing-option__header">
+                                <img src="assets/pricing-icon-1.svg">
+                                <span>Free</span>
+                                <div class="h5">FREE</div>
+                                <p>Solution exploration.</p>
+                            </div>
+
+                            <div class="content">
+                                <button class="btn btn-link" id="show-more-btn">
+                                    <img src="assets/chevron-down.svg" alt="Down Arrow"> Show more
+                                </button>
+                                <p>
+
+                                </p>
+                                <div id="table-container" style="display: none;">
+                                    <div class="table-responsive pricing-options_table">
+                                        <table class="table pricing-options-table__table text-white">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Graphics</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">HTML export</td>
+
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Gallery</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Workspaces
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Private workspace</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Shared workspaces</td>
+                                                    <td>Unlimited</td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Members per workspace</td>
+                                                    <td>Unlimited</td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Wallet per workspace</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Coins earning</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Store</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Graphics publishing</td>
+                                                    <td>Free and paid</td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Graphics purchasing</td>
+                                                    <td>Free and paid</td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">API accesss</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="my-5 mobile-content">
+
+                            <div class="pricing-option__header pricing-option_popular">
+                                <img src="assets/pricing-icon-2.svg">
+                                <span>Individual</span>
+                                <div class="h5">$15/month</div>
+                                <p>Private use</p>
+                            </div>
+
+                            <div class="content">
+                                <button class="btn btn-link" id="show-more-btn">
+                                    <img src="assets/chevron-down.svg" alt="Down Arrow"> Show more
+                                </button>
+                                <p>
+
+                                </p>
+                                <div id="table-container" style="display: none;">
+                                    <div class="table-responsive pricing-options_table">
+                                        <table class="table pricing-options-table__table text-white">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Graphics</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">HTML export</td>
+
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Gallery</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Workspaces
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Private workspace</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Shared workspaces</td>
+                                                    <td>Unlimited</td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Members per workspace</td>
+                                                    <td>Unlimited</td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Wallet per workspace</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Coins earning</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Store</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Graphics publishing</td>
+                                                    <td>Free and paid</td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Graphics purchasing</td>
+                                                    <td>Free and paid</td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">API accesss</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="my-5 mobile-content">
+
+                            <div class="pricing-option__header">
+                                <img src="assets/pricing-icon-3.svg">
+                                <span>Business</span>
+                                <div class="h5">$20/month</div>
+                                <p>Advanced collaboration.</p>
+                            </div>
+
+                            <div class="content">
+                                <button class="btn btn-link" id="show-more-btn">
+                                    <img src="assets/chevron-down.svg" alt="Down Arrow"> Show more
+                                </button>
+                                <p>
+
+                                </p>
+                                <div id="table-container" style="display: none;">
+                                    <div class="table-responsive pricing-options_table">
+                                        <table class="table pricing-options-table__table text-white">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Graphics</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">HTML export</td>
+
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Gallery</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Workspaces
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Private workspace</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Shared workspaces</td>
+                                                    <td>Unlimited</td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Members per workspace</td>
+                                                    <td>Unlimited</td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Wallet per workspace</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Coins earning</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Store</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Graphics publishing</td>
+                                                    <td>Free and paid</td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Graphics purchasing</td>
+                                                    <td>Free and paid</td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">API accesss</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="my-5 mobile-content">
+
+                            <div class="pricing-option__header">
+                                <img src="assets/pricing-icon-4.svg">
+                                <span>Enterprise</span>
+                                <div class="h5">$60/month</div>
+                                <p>Unlimited features.</p>
+                            </div>
+
+                            <div class="content">
+                                <button class="btn btn-link" id="show-more-btn">
+                                    <img src="assets/chevron-down.svg" alt="Down Arrow"> Show more
+                                </button>
+                                <p>
+
+                                </p>
+                                <div id="table-container" style="display: none;">
+                                    <div class="table-responsive pricing-options_table">
+                                        <table class="table pricing-options-table__table text-white">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Graphics</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">HTML export</td>
+
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Gallery</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Workspaces
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Private workspace</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Shared workspaces</td>
+                                                    <td>Unlimited</td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Members per workspace</td>
+                                                    <td>Unlimited</td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Wallet per workspace</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Coins earning</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Store</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Graphics publishing</td>
+                                                    <td>Free and paid</td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Graphics purchasing</td>
+                                                    <td>Free and paid</td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">API accesss</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="text-white tab-pane fade" id="pills-profile1" role="tabpanel"
+                        aria-labelledby="pills-profile-tab">
+                        <div class="my-5 mobile-content">
+
+                            <div class="pricing-option__header">
+                                <img src="assets/pricing-icon-1.svg">
+                                <span>Free</span>
+                                <div class="h5">FREE</div>
+                                <p>Solution exploration.</p>
+                            </div>
+
+                            <div class="content">
+                                <button class="btn btn-link" id="show-more-btn">
+                                    <img src="assets/chevron-down.svg" alt="Down Arrow"> Show more
+                                </button>
+                                <p>
+
+                                </p>
+                                <div id="table-container" style="display: none;">
+                                    <div class="table-responsive pricing-options_table">
+                                        <table class="table pricing-options-table__table text-white">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Graphics</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">HTML export</td>
+
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Gallery</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Workspaces
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Private workspace</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Shared workspaces</td>
+                                                    <td>Unlimited</td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Members per workspace</td>
+                                                    <td>Unlimited</td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Wallet per workspace</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Coins earning</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Store</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Graphics publishing</td>
+                                                    <td>Free and paid</td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Graphics purchasing</td>
+                                                    <td>Free and paid</td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">API accesss</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="my-5 mobile-content">
+
+                            <div class="pricing-option__header pricing-option_popular">
+                                <img src="assets/pricing-icon-2.svg">
+                                <span>Individual</span>
+                                <div class="h5">$144/year</div>
+                                <p>Private use</p>
+                            </div>
+
+                            <div class="content">
+                                <button class="btn btn-link" id="show-more-btn">
+                                    <img src="assets/chevron-down.svg" alt="Down Arrow"> Show more
+                                </button>
+                                <p>
+
+                                </p>
+                                <div id="table-container" style="display: none;">
+                                    <div class="table-responsive pricing-options_table">
+                                        <table class="table pricing-options-table__table text-white">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Graphics</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">HTML export</td>
+
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Gallery</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Workspaces
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Private workspace</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Shared workspaces</td>
+                                                    <td>Unlimited</td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Members per workspace</td>
+                                                    <td>Unlimited</td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Wallet per workspace</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Coins earning</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Store</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Graphics publishing</td>
+                                                    <td>Free and paid</td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Graphics purchasing</td>
+                                                    <td>Free and paid</td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">API accesss</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="my-5 mobile-content">
+
+                            <div class="pricing-option__header">
+                                <img src="assets/pricing-icon-3.svg">
+                                <span>Business</span>
+                                <div class="h5">$192/year</div>
+                                <p>Advanced collaboration.</p>
+                            </div>
+
+                            <div class="content">
+                                <button class="btn btn-link" id="show-more-btn">
+                                    <img src="assets/chevron-down.svg" alt="Down Arrow"> Show more
+                                </button>
+                                <p>
+
+                                </p>
+                                <div id="table-container" style="display: none;">
+                                    <div class="table-responsive pricing-options_table">
+                                        <table class="table pricing-options-table__table text-white">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Graphics</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">HTML export</td>
+
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Gallery</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Workspaces
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Private workspace</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Shared workspaces</td>
+                                                    <td>Unlimited</td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Members per workspace</td>
+                                                    <td>Unlimited</td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Wallet per workspace</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Coins earning</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Store</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Graphics publishing</td>
+                                                    <td>Free and paid</td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Graphics purchasing</td>
+                                                    <td>Free and paid</td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">API accesss</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="my-5 mobile-content">
+
+                            <div class="pricing-option__header">
+                                <img src="assets/pricing-icon-4.svg">
+                                <span>Enterprise</span>
+                                <div class="h5">$576/year</div>
+                                <p>Unlimited features.</p>
+                            </div>
+
+                            <div class="content">
+                                <button class="btn btn-link" id="show-more-btn">
+                                    <img src="assets/chevron-down.svg" alt="Down Arrow"> Show more
+                                </button>
+                                <p>
+
+                                </p>
+                                <div id="table-container" style="display: none;">
+                                    <div class="table-responsive pricing-options_table">
+                                        <table class="table pricing-options-table__table text-white">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Graphics</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">HTML export</td>
+
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Gallery</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Workspaces
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Private workspace</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Shared workspaces</td>
+                                                    <td>Unlimited</td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Members per workspace</td>
+                                                    <td>Unlimited</td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Wallet per workspace</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Coins earning</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pricing-options-table__title head-title-tb">Store</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">Graphics publishing</td>
+                                                    <td>Free and paid</td>
+                                                </tr>
+                                                <tr class="tb-dark-gray">
+                                                    <td class="pricing-options-table__title">Graphics purchasing</td>
+                                                    <td>Free and paid</td>
+                                                </tr>
+                                                <tr class="tb-light-gray">
+                                                    <td class="pricing-options-table__title">API accesss</td>
+                                                    <td><img src="assets/check-circle.svg"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".mobile-content").each(function () {
+                    var content = $(this).find(".content p");
+                    var tableContainer = $(this).find("#table-container");
+                    var btn = $(this).find(".btn.btn-link");
+                    var fullText = content.text();
+
+                    // Skryjeme časť textu a tabuľku
+                    content.text(''); // Žiadny text
+                    tableContainer.hide();
+
+                    btn.click(function () {
+                        if (content.text() === '') {
+                            content.text(fullText);
+                            tableContainer.show();
+                            btn.html('<img src="assets/chevron-up.svg" alt="Up Arrow"> Show less');
+                        } else {
+                            content.text('');
+                            tableContainer.hide();
+                            btn.html('<img src="assets/chevron-down.svg" alt="Down Arrow"> Show more');
+                        }
+                    });
+                });
+            });
+        </script>
+
+
+        <!---Early banner -->
+        <div class="container pt-5 px-5">
+            <div class="row px-3">
+                <div class="col-lg-12 mb-lg-0 py-5 text-center px-5 bk-light-blue">
+                    <span>Until the end of October</span>
+                    <h3 class="contact-headline">Early birds offer</h3>
+                    <p class="text-white">Create a free account and get full access to all features of Individual
+                        license. No credit card needed. Get started in 2 minutes.</p>
+                    <a class="btn btn-primary-white" target="_blank" href="https://app.tween.ly/signup">Sign up</a>
+                </div>
+            </div>
+        </div>
+        <!---Early banner end-->
+
+        <div class="container px-5">
+            <div class="row">
+                <div class="divider"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FAQ section -->
+    <section class="bg-dark py-5" id="faq">
+        <div class="container px-5 mb-5">
+            <div class="text-center mb-5">
+                <span class="subheadline-sc">FAQ</span>
+                <h3 class="mb-3 mt-3">Frequently asked questions</h3>
+                <p class="text-white lead mb-0">Everything you need to know about the product and billing.</p>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion mb-5" id="accordionExample">
+                        <div class="accordion-item bg-dark text-white">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark faq-title" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Is there a free version available?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Yes, you can try Tweenly for free for an unlimited time. Free version is aimed to
+                                    get you up and running as soon as possible. You may try editor, personal cloud
+                                    storage, and free graphics publishing and purchasing.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-dark text-white">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed bg-dark faq-title" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Can I change my plan later?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Yes, you can upgrade your plan at any time within the same billing period (monthly
+                                    or annual).
+                                    In this case, we will reduce new membership billing by the already paid period.
+                                    However, at this time, we don’t support license downgrade.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-dark text-white">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed bg-dark faq-title" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    How does billing work?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    In the current version, we offer everyone Individual license until the end of
+                                    October for free.
+                                    If you are interested in a higher license, please write to us and we will offer you
+                                    the solution. Tweenly does not have an integrated payment gateway yet.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-dark text-white">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed bg-dark faq-title" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    How do I change my account email?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    You can change your email after logging in and navigating into profile settings.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container pt-4 pb-3 px-5">
+            <div class="row gx-5 bk-light-grey">
+                <div class="col-lg-12 mb-1 mb-lg-0 text-center">
+                    <h3 class="contact-headline">Still have questions?</h3>
+                    <p class="text-white">Can’t find the answer you’re looking for? Please send an email to our friendly
+                        team.</p>
+                    <a class="btn btn-primary-cs mt-3" href="mailto:info@tween.ly">Send an email</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container px-5">
+            <div class="row">
+                <div class="divider"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact section -->
+    <section class="bg-dark py-3" id="contact">
+        <div class="container px-5">
+            <div class="text-center">
+                <span class="subheadline-sc">Contact</span>
+                <h3 class="mb-3 mt-3">We’d love to hear from you</h3>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <p class="text-white lead mb-5">Questions or queries? Get in touch!<br> Contact our friendly
+                            teams in the heart of Europe.</p>
+                        <div class="map-sc">
+                            <img class="width-image" src="assets/europe-map.png">
+
+                            <div class="map-point map-point-container">
+                                <div class="map-point__marker"></div>
+                                <div class="map-point__marker-radar"></div>
+                                <div class="map-point__tooltip"><img src="assets/cz_flag.svg" width="30" class="my-3">
+                                    <h3>Praha, CZE</h3>
+                                    <p>Kodaňská 101</p>
+                                </div>
+                            </div>
+
+
+                            <div class="map-point-2 map-point-container-2">
+                                <div class="map-point__marker-2"></div>
+                                <div class="map-point__marker-radar-2"></div>
+                                <div class="map-point__tooltip-2"><img src="assets/svk_flag.svg" width="30"
+                                        class="my-3">
+                                    <h3>Batizovce, SVK</h3>
+                                    <p>Športová 435/3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5 text-white">
+                    <p><a class="contact-email" href="mailto:info@tween.ly">info@tween.ly</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer-->
+    <footer class="pb-5 bg-dark">
+
+        <div class="container pb-5">
+            <div class="row">
+                <div class="divider"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-md-left">
+                    <p class="m-0"><a href="https://tween.ly"><img src="assets/tweenly-logo.svg"></a></p>
+                </div>
+                <div class="col-md-4 text-md-left">
+                    <p class="m-0 text-center text-md-left social-media">
+                        <a href="https://www.linkedin.com/company/tween-ly" target=”_blank”>
+                            <img src="assets/linkedin.svg">
+                        </a>
+                        <!-- <a href="#"><img src="assets/facebook.svg"></a> -->
+                    </p>
+                </div>
+                <div class="col-md-4 text-md-left copyright">
+                    <p class="m-0">© 2023 Tweenly by <a target="_blank" href="https://streamcircle.com/">Stream
+                            Circle</a>.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+</body>
+
 </html>
