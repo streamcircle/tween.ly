@@ -53,7 +53,7 @@
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 31, 30, 31;
+  --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -62,7 +62,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #1F1E1F;
+  --bs-body-bg: #fff;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -11546,18 +11546,13 @@ footer a{
 }
 
 .social-media a{
-  margin:5px
-  ;
+  margin:5px;
+  text-align: right !important;
 }
 
 .contact-email{
     color: white;
 }
-
-.copyright{
-  text-align: right;
-}
-
 
 .btn-link{
   font-size: 16px;
@@ -11641,15 +11636,8 @@ footer a{
     font-size: 3rem;
     }
 
-
-    .nav-pills .nav-link {
-   /* display: inline-grid;*/
-    }
     .text-md-left{
   text-align: left !important;
-  }
-  .social-media{
-    margin: 20px 0px !important;
   }
 
   .btn-link-cs{
