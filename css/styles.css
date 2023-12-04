@@ -11548,6 +11548,7 @@ footer a{
 .social-media a{
   margin:5px;
   text-align: right !important;
+  text-decoration: none !important;
 }
 
 .contact-email{
