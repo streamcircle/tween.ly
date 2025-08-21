@@ -50,7 +50,12 @@
                             aria-label="Link to Solution section">Solution</a></li>
                     <li class="nav-item"><a class="nav-link" href="#pricing"
                             aria-label="Link to Pricing section">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services"
+                            aria-label="Link to Services section">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#references"
+                            aria-label="Link to Reference section">References</a></li>
                     <li class="nav-item"><a class="nav-link" href="#faq" aria-label="Link to FAQ section">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-us" aria-label="Link to About us section">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact"
                             aria-label="Link to Contact section">Contact</a></li>
                 </ul>
@@ -67,10 +72,10 @@
     <!-- Header-->
     <header class="bg-dark py-5">
         <div class="container px-5">
-            <div class="row bg-light-blue gx-5 justify-content-center">
+            <div class="row bg-dark-teal gx-5 justify-content-center">
                 <div class="col-lg-8">
                     <div class="text-center headline-pd">
-                        <h1 class="display-5 text-white mb-2">Supporting broadcasting creativity</h1>
+                        <h1 class="display-5 text-white mb-2">Where Broadcast Design Comes to Life</h1>
                     </div>
                 </div>
             </div>
@@ -80,56 +85,42 @@
 
         <img class="image-patern-desktop-two" src="assets/pattern.png" alt="" width="209" height="408">
 
-        <div class="container px-5 my-3">
+    </header>
+    <section class="py-5 bg-dark" id="examples">
+        <div class="container px-4">
+            <div class="row gx-3">
+                <div class="col">
+                    <video class="width-image promo-video" loop muted 
+                    > <!-- je mozne pridat poster="assets/tweenly-logo.svg" aby nebola cierna obrazovka ked sa videao neprehrava-->
+                        <source src="assets/Tweenly-promo.mp4" type="video/mp4" >
+                        Your browser does not support the video tag.
+                    </video>         
+                </div>
+                <div class="col">
+                    <video class="width-image promo-video" loop muted>
+                        <source src="assets/Tweenly-promo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col">
+                    <video class="width-image promo-video" loop muted>
+                        <source src="assets/Tweenly-promo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>    
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-3">
             <div class="row gx-5 justify-content-center">
-                <div class="col-lg-8">
+                <div class="col-lg-10">
                     <div class="text-center my-5">
-                            <h2 class="mb-4 text-white">HTML and JS Animation Tool for Broadcast Graphics</h2>
-                        <p class="lead text-white mb-4">Tweenly, developed by Provys Technologies, is the HTML and JS animation tool designed to simplify the workflow for both designers and broadcasters. It seamlessly integrates HTML-based graphics with broadcast playout systems, allowing designers to create visually stunning broadcast graphics.</p>
+                        <h2 class="mb-4 mt-3 text-light-teal">Animation tool for broadcast graphics</h2>
+                        <p class="lead text-start text-white mb-4">With over 30 years in broadcast technology, we’ve seen the same challenge across TV stations of all sizes: the need to create graphics with real-time data, tickers, and API control — and export them as production-ready HTML. That’s why we built Tweenly — a web-based application tailored to the specifics of broadcast graphics. It streamlines design, data connection, and playout integration in one powerful tool.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-    <!-- Features section-->
-    <section class="bg-dark" id="features">
-        <div class="container px-5">
-            <div class="row gx-5 bk-light-grey">
-                <div class="col-lg-3 mb-5 mb-lg-0 text-center">
-                    <img class="mb-3" src="assets/featured-icon-1.svg" alt="" width="51" height="51">
-                    <p class="text-white fw-bold">Visual design without coding</p>
-                    <p class="text-white">Create and customize graphics effortlessly using an intuitive drag-and-drop editor, no coding required.</p>
-                </div>
-                <div class="col-lg-3 mb-5 mb-lg-0 text-center">
-                    <img class="mb-3" src="assets/featured-icon-2.svg" alt="" width="51" height="51">
-                    <p class="text-white fw-bold">Image sequence management</p>
-                    <p class="text-white">Seamlessly process and manage image sequences for dynamic visual content.</p>
-                </div>
-                <div class="col-lg-3 mb-5 mb-lg-0 text-center">
-                    <img class="mb-3" src="assets/featured-icon-3.svg" alt="" width="51" height="51">
-                    <p class="text-white fw-bold">Real-time data integration</p>
-                    <p class="text-white">Incorporate live data feeds directly into your graphics for up-to-the-minute updates.</p>
-                </div>
-                <div class="col-lg-3 mb-5 mb-sm-0 text-center">
-                    <img class="mb-3" src="assets/featured-icon-4.svg" alt="" width="51" height="51">
-                    <p class="text-white fw-bold">Collaborative shared workspaces</p>
-                    <p class="text-white">Work together in real-time with your team, ensuring smooth collaboration within shared environments.</p>
-                </div>
-            </div>
-        </div>
-
-        <!--- Wish banner -->
-        <!-- <div class="container pt-5 px-5">
-            <div class="row gx-5">
-                <div class="col-lg-12 mb-5 mb-lg-0 py-5 text-center bk-light-blue">
-                    <h3 class="contact-headline">A Sparkling Holiday Wish for You! 🎄</h3>
-                    <p class="text-white">Wishing you a Merry Christmas and a holiday filled with warmth, happiness, and
-                        cherished moments.</p>
-                </div>
-            </div>
-        </div> -->
-        <!---Wish banner end-->
-
         <div class="container px-5">
             <div class="row">
                 <div class="divider"></div>
@@ -143,9 +134,9 @@
             <div class="row gx-5 justify-content-center">
                 <div class="col-lg-10">
                     <div class="text-center">
-                        <span class="subheadline-sc">Solution</span>
-                        <h3 class="mb-3 mt-3">Get more of your animation process</h3>
-                        <p class="text-white mb-5">Take full control of your broadcast graphics design and simplify the process from start to finish. Tweenly allows you to spend more time creating dynamic tickers, lower thirds and titles, and less time dealing with technical challenges.</p>
+                        <span class="subheadline-sc text-pastel-teal">Solution</span>
+                        <h3 class="mb-3 mt-3 text-light-teal">Right Broadcast Tools</h3>
+                        <p class="lead text-start text-white mb-5">Take full control of your broadcast graphics design from scene creation to playout integration. Tweenly allows you to spend more time creating dynamic tickers, lower thirds and titles, and less time dealing with technical challenges. The appliactaion is fully cloud-based — access your graphics, share, and export from anywhere.</p>
                         <!-- <img class="width-image" src="assets/animation-proces.png"> -->
                         <!-- <a href="https://www.youtube.com/watch?v=z0Sj1p160HU" target="_blank"> -->
                         <video class="width-image promo-video" loop="true" autoplay muted>
@@ -157,81 +148,102 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Benefits -->
-    <section class="py-5 bg-dark " id="benefits">
-        <div class="container px-5">
-            <div class="row gx-5">
-                <div class="col-lg-6 mb-5 mb-lg-0 text-center pt-3">
-                    <img class="icon-bg mb-3" src="assets/solution-1.svg" alt="" width="64" height="64">
-                    <h4 class="text-white">Editor</h4>
-                    <p class="text-white">The editor scene consists of shape objects, images, and texts organized and
-                        nested in hierarchical structures and styled via CSS. Interactive timeline and scene preview
-                        provide real-time feedback on the appearance of all animated objects in various time stamps.</p>
+        <div class="container py-5 px-5">
+            <div class="row gx-3">
+                <div class="col">
+                    <div class="p-3 bk-light-grey h-100">
+                        <h4 class="text-white text-start">Editor</h4>
+                        <p class="text-white text-start">The Editor is where you build individual scenes. Each scene consists of objects — such as shapes, texts, and images — that can be nested, grouped, and positioned in layers. Styling is handled through CSS. The timeline allows you to animate objects and control their timing. Triggers and labels define programmatic behavior during playback.</p>
+                    </div>
                 </div>
-                <div class="col-lg-6 mb-5 mb-lg-0 text-center pt-3">
-                    <img class="icon-bg mb-3" src="assets/solution-2.svg" alt="" width="64" height="64">
-                    <h4 class="text-white">Workspaces</h4>
-                    <p class="text-white">Creating rich brand graphics doesn't have to be a one-man show. Workspaces
-                        were designed to make graphics accessible to all its members for collaborative creation and
-                        management.</p>
+                <div class="col">
+                    <div class="p-3 bk-light-grey h-100">
+                        <h4 class="text-white text-start">Gallery</h4>
+                        <p class="text-white text-start">The Gallery is a personal cloud-based storage for your graphics. It contains all created or imported scenes and allows browsing, editing, versioning, and exporting. Every project remains accessible and editable at any time.</p>
+                    </div>
                 </div>
-                <div class="col-lg-6 mb-5 mb-lg-0 text-center pt-3">
-                    <img class="icon-bg mb-3" src="assets/solution-3.svg" alt="" width="64" height="64">
-                    <h4 class="text-white">Gallery</h4>
-                    <p class="text-white">Tweenly comes with cloud storage for access to the graphics on your personal
-                        account. For graphics transfer automation, the gallery can be integrated with content management
-                        solutions through API.</p>
-                </div>
-                <div class="col-lg-6 mb-5 mb-sm-0 text-center pt-3">
-                    <img class="icon-bg mb-3" src="assets/solution-4.svg" alt="" width="64" height="64">
-                    <h4 class="text-white">Store</h4>
-                    <p class="text-white">You may overflow with creativity worth sharing or, on the contrary, look for
-                        attractive graphical outputs of others to use for your own purposes. The store provides space
-                        for the meeting of offers and demands of globally available graphics. Some are free, others are
-                        valued with a certain amount of our coin transaction system.</p>
+                <div class="col">
+                    <div class="p-3 bk-light-grey h-100">
+                        <h4 class="text-white text-start">Workspaces</h4>
+                        <p class="text-white text-start">Workspaces are shared environments where multiple users can collaborate on graphics. Each workspace contains a set of scenes, assets, and configuration data. Access rights and roles determine who can view, edit, or export content. All changes are synced in real time.</p>
+                    </div>
                 </div>
             </div>
         </div>
-
+    </section>
+    <section class="bk-dark-teal py-5">
+        <div class="container px-5 py-5">
+            <div class="row gx-5 mb-5">
+                <div class="col-lg-4 mb-5 mb-lg-0 text-center">
+                    <h4 class="text-white  text-start">Graphics export options</h4>
+                    <p class="text-start text-white">Graphic files can be exported as plain HTML with files linked to our cloud, or as a ZIP package that includes all assets needed for offline use. The package format is especially recommended when working with images, custom fonts, or image sequences.</p>
+                    <a href="https://docs.tween.ly/getting-started/introduction/" target="_blank" rel="noopener">
+                        <p class="text-white text-start fw-bold">Learn more →</p> 
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0 text-center">
+                    <h4 class="text-white  text-start">Tickers</h4>
+                    <p class="text-white text-start">Display scrolling or crawling text within a scene. Their direction, speed, and content can be configured for different use cases, such as sports results or news headlines.</p>
+                    <a href="https://docs.tween.ly/getting-started/introduction/" target="_blank" rel="noopener">
+                        <p class="text-white text-start fw-bold">Learn more →</p> 
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0 text-center">
+                    <h4 class="text-white  text-start">Image Sequence</h4>
+                    <p class="text-white text-start">An image sequence is a series of numbered images used for frame-by-frame animation. Tweenly supports importing and timing these sequences.</p>
+                    <a href="https://docs.tween.ly/getting-started/introduction/" target="_blank" rel="noopener">
+                        <p class="text-white text-start fw-bold">Learn more →</p> 
+                    </a>
+                </div>
+            </div>
+            <div class="row gx-5">
+                <div class="col-lg-4 mb-5 mb-lg-0 text-center">
+                    <h4 class="text-white fw-bold text-start">Code Triggers</h4>
+                    <p class="text-white text-start">Triggers are code blocks executed during timeline playback. Timeline labels mark specific timeline points and are used to pause, jump, or sync animations programmatically.</p>
+                    <a href="https://docs.tween.ly/getting-started/introduction/" target="_blank" rel="noopener">
+                        <p class="text-white text-start fw-bold">Learn more →</p> 
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0 text-center">
+                    <h4 class="text-white fw-bold text-start">Data Source & API Control</h4>
+                    <p class="text-white text-start">Text, image, and ticker fields can be updated from external sources. This includes connecting to structured data feeds (JSON, XML, TXT) or receiving values via API commands from a playout system. No scripting is required. Input values are applied in real time during playback.</p>
+                    <br/>
+                    <a href="https://docs.tween.ly/getting-started/introduction/" target="_blank" rel="noopener">
+                        <p class="text-white text-start fw-bold">Learn more →</p> 
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0 text-center">
+                    <h4 class="text-white fw-bold text-start">Build-in Test App</h4>
+                    <p class="text-white text-start">The Test App simulates API inputs to preview graphics under different conditions. It allows manual testing of text, images, and styles before playout.</p>
+                    <br/>
+                    <a href="https://docs.tween.ly/getting-started/introduction/" target="_blank" rel="noopener">
+                        <p class="text-white text-start fw-bold">Learn more →</p> 
+                    </a>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <section class="bg-dark pt-5 view-desktop">
         <div class="container px-5">
             <div class="row">
                 <div class="divider"></div>
             </div>
         </div>
-
     </section>
-
-
-
 
     <!-- Pricing section desktop -->
     <section class="bg-dark pt-5 view-desktop" id="pricing">
-        <div class="container px-5">
-            <div class="text-center mb-5">
-                <span class="subheadline-sc">Pricing</span>
-                <h3 class="mb-3 mt-3">Plans that fit your scale</h3>
-                <p class="text-white lead mb-0">Simple, transparent pricing that grows with you.</p>
+        <div class="container px-5 py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="text-center mb-5">
+                        <span class="subheadline-sc text-pastel-teal">Pricing</span>
+                        <h3 class="mb-3 mt-3 text-light-teal">Two Simple Plans</h3>
+                        <p class="text-white lead mb-0">Free or Unlimited – nothing in between. Start for free and explore the core features. When you're ready to go live, unlock everything with Unlimited.</p>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-12">
-
-                <ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
-                    <div class="cover-tabs">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="pills-home-tab-desktop" data-bs-toggle="pill"
-                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                                aria-selected="true">Monthly</button>
-                        </li>
-                        <!-- YEARLY -->
-                        <!-- <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                                aria-selected="false">Yearly<span>Save 20%</span></button>
-                        </li> -->
-                    </div>
-                </ul>
-
                 <div class="tab-content pt-5" id="pills-tabContent">
                     <div class="text-white tab-pane fade show active" id="pills-home" role="tabpanel"
                         aria-labelledby="pills-home-tab-desktop">
@@ -1308,35 +1320,53 @@
 
             </div>
         </div>
-
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $(".mobile-content").each(function () {
-                    var content = $(this).find(".content p");
-                    var tableContainer = $(this).find("#table-container");
-                    var btn = $(this).find(".btn.btn-link");
-                    var fullText = content.text();
-
-                    // Skryjeme časť textu a tabuľku
-                    content.text(''); // Žiadny text
-                    tableContainer.hide();
-
-                    btn.click(function () {
-                        if (content.text() === '') {
-                            content.text(fullText);
-                            tableContainer.show();
-                            btn.html('<img src="assets/chevron-up.svg" alt="Up Arrow" width="24" height="24"> Show less');
-                        } else {
-                            content.text('');
-                            tableContainer.hide();
-                            btn.html('<img src="assets/chevron-down.svg" alt="Down Arrow" width="24" height="24"> Show more');
-                        }
-                    });
-                });
-            });
-        </script>
-
+        <div class="container px-5">
+            <div class="row">
+                <div class="divider"></div>
+            </div>
+        </div>
+    </section>
+    <section class="bk-dark-teal py-5" id="services">
+        <div class="container px-5 py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <span class="subheadline-sc text-pastel-teal text-center">Services</span>
+                    <h3 class="mb-3 mt-3 text-white text-center">Send us your graphic. <br/>We’ll handle the rest.</h3>
+                    <p class="text-white text-start">Missing time or resources to build everything from scratch? With Tweenly Services, we convert your existing visuals into production-ready HTML templates, upload them to your shared workspace in Tweenly, and ensure everything is playout-ready.</p>
+                    <p class="text-white lead my-3 text-center">
+                        👉 Contact us
+                        <a class="contact-email" href="mailto:info@tween.ly" aria-label="Link to the email info@tween.ly">info@tween.ly</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark py-5" id="references">
+        <div class="container px-5 mb-5">
+            <div class="text-center mb-5">
+                <span class="subheadline-sc text-pastel-teal">References</span>
+                <h3 class="mb-3 mt-3 text text-light-teal">Broadcasters we’ve worked with</h3>
+                <p class="text-white lead mb-0">We’ve processed and delivered broadcast graphics for several TV stations.</p>
+            </div>
+            <div class="container px-5">
+                <div class="row gx-3">
+                    <div class="col">
+                    <div class="p-3 bk-light-grey">
+                        <div class="img-container">
+                            <img class="img-fit" src="assets/provys-technologies.png" alt="Reference logo">
+                        </div>  
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="p-3 bk-light-grey">
+                        <div class="img-container">
+                            <img class="img-fit" src="assets/provys-technologies.png" alt="Reference logo">
+                        </div>  
+                    </div>
+                    </div>
+                </div>      
+            </div>
+        </div>
         <div class="container px-5">
             <div class="row">
                 <div class="divider"></div>
@@ -1348,8 +1378,8 @@
     <section class="bg-dark py-5" id="faq">
         <div class="container px-5 mb-5">
             <div class="text-center mb-5">
-                <span class="subheadline-sc">FAQ</span>
-                <h3 class="mb-3 mt-3">Frequently asked questions</h3>
+                <span class="subheadline-sc text-pastel-teal">FAQ</span>
+                <h3 class="mb-3 mt-3 text text-light-teal">Frequently asked questions</h3>
                 <p class="text-white lead mb-0">Everything you need to know about the product and billing.</p>
             </div>
         </div>
@@ -1360,11 +1390,11 @@
                 <div class="col-lg-8">
                     <div class="accordion mb-5" id="accordionExample">
                         <div class="accordion-item bg-dark text-white">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button bg-dark faq-title" type="button"
+                            <h2 class="accordion-header text-pastel-teal" id="headingOne">
+                                <button class="accordion-button bg-dark faq-title " type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                                     aria-controls="collapseOne">
-                                    Is there a free version available?
+                                     <p class="text-pastel-teal p-0 m-0">Is there a free version available?</p>
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
@@ -1378,10 +1408,10 @@
                         </div>
                         <div class="accordion-item bg-dark text-white">
                             <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed bg-dark faq-title" type="button"
+                                <button class="accordion-button collapsed bg-dark faq-title text-pastel-teal" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                                     aria-controls="collapseTwo">
-                                    Can I change my plan later?
+                                    <p class="text-pastel-teal p-0 m-0">Can I change my plan later?</p>
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
@@ -1396,10 +1426,10 @@
                         </div>
                         <div class="accordion-item bg-dark text-white">
                             <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed bg-dark faq-title" type="button"
+                                <button class="accordion-button collapsed bg-dark faq-title text-pastel-teal" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                                     aria-controls="collapseThree">
-                                    How does billing work?
+                                    <p class="text-pastel-teal p-0 m-0">How does billing work?</p>
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
@@ -1415,10 +1445,10 @@
                         </div>
                         <div class="accordion-item bg-dark text-white">
                             <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed bg-dark faq-title" type="button"
+                                <button class="accordion-button collapsed bg-dark faq-title text-pastel-teal" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                                     aria-controls="collapseFour">
-                                    How do I change my account email?
+                                    <p class="text-pastel-teal p-0 m-0">How do I change my account email?</p>
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
@@ -1431,21 +1461,41 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
-        <div class="container pt-4 pb-3 px-5">
-            <div class="row gx-5 bk-light-grey">
-                <div class="col-lg-12 mb-1 mb-lg-0 text-center">
-                    <h3 class="contact-headline">Still have questions?</h3>
-                    <p class="text-white">Can’t find the answer you’re looking for? Please send an email to our friendly
-                        team.</p>
-                    <a class="btn btn-primary-cs mt-3" href="mailto:info@tween.ly" aria-label="Send an email">Send an
-                        email</a>
+        <div class="container px-5">
+            <div class="row">
+                <div class="divider"></div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark py-5" id="about-us">
+        <div class="container px-5 mb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <span class="subheadline-sc text-pastel-teal text-center">About us</span>
+                    <h3 class="mb-3 mt-3 text-light-teal text-center">Developing More</h3>
+                    <p class="text-white text-start">Tweenly is developed by PROVYS Technologies, creators of Provys and Stream Circle. We built it in response to a common challenge across TV stations: the need for a tool that simplifies the creation of broadcast graphics with real-time data, playout integration, and full control over HTML output — without workarounds or developer dependencies.</p>
+            
+                    <div class="row justify-content-center">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="img-container">
+                            <img class="img-fit" src="assets/provys-technologies.png" alt="Provys Technologies">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="img-container">
+                            <img class="img-fit" src="assets/sphere-by-provys.png" alt="Sphere by Provys">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0 ">
+                        <div class="img-container">
+                            <img class="img-fit" src="assets/streamcircle.png" alt="Streamcircle">
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
-
         <div class="container px-5">
             <div class="row">
                 <div class="divider"></div>
@@ -1458,11 +1508,14 @@
     <section class="bg-dark py-3" id="contact">
         <div class="container px-5">
             <div class="text-center">
-                <span class="subheadline-sc">Contact</span>
-                <h3 class="mb-3 mt-3">We’d love to hear from you</h3>
+                <span class="subheadline-sc text-pastel-teal">Contact</span>
+                <h3 class="mb-3 mt-3 text-light-teal">We’d love to hear from you</h3>
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
-                        <p class="text-white lead mb-5">For questions about broadcast graphics design, system integration, or others, contact our team in the heart of Europe. We're here to assist with all your needs.</p>
+                        <div class="mb-5">
+                            <p class="text-white lead">Have a question about graphics, integration, or services? Our team in the heart of Europe is ready to help.</p>
+                            <a class="contact-email" href="mailto:info@tween.ly" aria-label="Link to the email info@tween.ly">info@tween.ly</a>
+                        </div>
                         <div class="map-sc">
                             <img class="width-image" src="assets/europe-map.png" alt="europe map" width="600" height="">
 
@@ -1473,6 +1526,16 @@
                                         width="30" height="30">
                                     <h3>Praha, CZE</h3>
                                     <p>Vinohradská 2828/151</p>
+                                </div>
+                            </div>
+
+                            <div class="map-point-3 map-point-container-3">
+                                <div class="map-point__marker-3"></div>
+                                <div class="map-point__marker-radar-3"></div>
+                                <div class="map-point__tooltip-3"><img class="my-3" src="assets/cz_flag.svg" alt="cz flag"
+                                        width="30" height="30">
+                                    <h3>Olomouc, CZE</h3>
+                                     <p>...</p> <!-- TO DO need address -->
                                 </div>
                             </div>
 
@@ -1488,11 +1551,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="mt-5 text-white">
-                    <p><a class="contact-email" href="mailto:info@tween.ly"
-                            aria-label="Link to the email info@tween.ly">info@tween.ly</a>
-                    </p>
                 </div>
             </div>
         </div>
@@ -1566,6 +1624,44 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            document.querySelectorAll('.promo-video').forEach(video => {
+                video.addEventListener('mouseenter', () => {
+                video.play();
+                });
+                video.addEventListener('mouseleave', () => {
+                video.pause();
+                video.currentTime = 0; // optional: reset to start when mouse leaves
+                });
+            });                                  
+        </script>
+        <script>
+            $(document).ready(function () {
+                $(".mobile-content").each(function () {
+                    var content = $(this).find(".content p");
+                    var tableContainer = $(this).find("#table-container");
+                    var btn = $(this).find(".btn.btn-link");
+                    var fullText = content.text();
+
+                    // Skryjeme časť textu a tabuľku
+                    content.text(''); // Žiadny text
+                    tableContainer.hide();
+
+                    btn.click(function () {
+                        if (content.text() === '') {
+                            content.text(fullText);
+                            tableContainer.show();
+                            btn.html('<img src="assets/chevron-up.svg" alt="Up Arrow" width="24" height="24"> Show less');
+                        } else {
+                            content.text('');
+                            tableContainer.hide();
+                            btn.html('<img src="assets/chevron-down.svg" alt="Down Arrow" width="24" height="24"> Show more');
+                        }
+                    });
+                });
+            });
+        </script>
 </body>
 
 </html>
