@@ -10883,11 +10883,11 @@ textarea.form-control-lg {
 
 
 .btn-link-cs{
-  color: var(--bs-primary-teal);
+  color: var(--bs-pastel-teal);
 }
 
 .btn-link-cs:hover{
-  color: var(--bs-pastel-teal);
+  color: var(--bs-dark-teal);
 }
 
 
@@ -10898,7 +10898,7 @@ textarea.form-control-lg {
 }
 
 .btn-primary-cs:hover{
-  background-color: var(--bs-light-teal);
+  background-color: var(--bs-dark-teal);
   color: white;
 }
 
@@ -11076,6 +11076,10 @@ thead, tbody, tfoot, tr, td, th {
   font-style: normal;
   font-weight: 400;
 } 
+
+.bk-dark-teal{
+  background: var(--bs-dark-teal);
+}
 
 
 .bk-light-blue{
