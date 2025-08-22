@@ -11387,7 +11387,7 @@ button:focus:not(:focus-visible) {
 .map-point .map-point__tooltip {
   position: absolute;
   right: 0.5px;
-  top: -180px;
+  top: -140px;
   z-index: 3;
   width: 150px;
   background-color: #272629;
@@ -11535,7 +11535,7 @@ button:focus:not(:focus-visible) {
 .map-point-2 .map-point__tooltip-2 {
   position: absolute;
   right: 0.5px;
-  top: -180px;
+  top: -140px;
   z-index: 3;
   width: 150px;
   background-color: #272629;
@@ -11651,7 +11651,7 @@ button:focus:not(:focus-visible) {
 .map-point-3 .map-point__tooltip-3 {
   position: absolute;
   right: 0.5px;
-  top: -180px;
+  top: -140px;
   z-index: 3;
   width: 150px;
   background-color: #272629;
