@@ -10968,7 +10968,7 @@ tr > td:first-child {
   font-size: 0.875rem;
   font-style: normal;
   font-weight : 500;
-  color: #B5E0F3;
+  color: var(--bs-pastel-teal);
 }
 tr > td:not(:first-child) {
   text-align: center;
@@ -10980,7 +10980,7 @@ thead, tbody, tfoot, tr, td, th {
 }
 
 .head-title-tb{
-  color: #63E5FF !important;
+  color: var(--bs-light-teal) !important;
 }
 
 .accordion-button:not(.collapsed){
@@ -11715,7 +11715,7 @@ footer a{
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  color: #B5E0F3;
+  color: var(--bs-pastel-teal);
   text-decoration: none;
 }
 
@@ -11724,7 +11724,7 @@ footer a{
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  color: #B5E0F3;
+  color: var(--bs-pastel-teal);
   text-decoration: none;
 }
 
