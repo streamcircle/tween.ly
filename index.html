@@ -90,20 +90,20 @@
         <div class="container px-4">
             <div class="row gx-3">
                 <div class="col">
-                    <video class="width-image promo-video" loop muted 
+                    <video class="width-image promo-video video-example" loop muted 
                     > <!-- je mozne pridat poster="assets/tweenly-logo.png" aby nebola cierna obrazovka ked sa videao neprehrava-->
                         <source src="assets/Tweenly-promo.mp4" type="video/mp4" >
                         Your browser does not support the video tag.
                     </video>         
                 </div>
                 <div class="col">
-                    <video class="width-image promo-video" loop muted>
+                    <video class="width-image promo-video video-example" loop muted>
                         <source src="assets/Tweenly-promo.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <div class="col">
-                    <video class="width-image promo-video" loop muted>
+                    <video class="width-image promo-video video-example" loop muted>
                         <source src="assets/Tweenly-promo.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>    
@@ -1231,7 +1231,7 @@
     <script src="js/scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
-            document.querySelectorAll('.promo-video').forEach(video => {
+            document.querySelectorAll('.video-example').forEach(video => {
                 video.addEventListener('mouseenter', () => {
                 video.play();
                 });
