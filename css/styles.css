@@ -20,6 +20,10 @@
   --bs-yellow: #ffc107;
   --bs-green: #198754;
   --bs-teal: #20c997;
+  --bs-pastel-teal: #AAEBE5;
+  --bs-light-teal: #2DD8C9;
+  --bs-primary-teal: #15AC9E;
+  --bs-dark-teal: #007A6F;
   --bs-cyan: #0dcaf0;
   --bs-black: #000;
   --bs-white: #fff;
@@ -74,7 +78,7 @@
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #0d6efd;
-  --bs-link-hover-color: #0a58ca;
+  --bs-link-hover-color: var(--bs-pastel-teal);
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -612,6 +616,22 @@ progress {
   height: auto;
 }
 
+.img-container{
+  width: 100%;
+  height: 150px;              
+  display: flex;
+  justify-content: center;    
+  align-items: center;        
+  overflow: hidden;
+}
+
+.img-fit{
+  max-width: 80%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
 .figure {
   display: inline-block;
 }
@@ -722,6 +742,11 @@ progress {
 .row-cols-6 > * {
   flex: 0 0 auto;
   width: 16.6666666667%;
+}
+
+.row-custom-gap {
+  --bs-gutter-x: 4rem; 
+  --bs-gutter-y: 2rem; 
 }
 
 .col-auto {
@@ -8084,6 +8109,16 @@ textarea.form-control-lg {
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-pastel-teal {
+  --bs-text-opacity: 1;
+  color: var(--bs-pastel-teal) !important;
+}
+
+.text-light-teal {
+  --bs-text-opacity: 1;
+  color: var(--bs-light-teal) !important;
+}
+
 .text-body {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
@@ -10834,26 +10869,36 @@ textarea.form-control-lg {
   font-size: 2rem;
 }
 
+#features a {
+  text-decoration: none;  
+  color: inherit;         
+}
+
+#features a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 /*Custom style*/
 
 
 .btn-link-cs{
-  color: #B5E0F3;
+  color: var(--bs-pastel-teal);
 }
 
 .btn-link-cs:hover{
-  color: #01B3DB;
+  color: var(--bs-dark-teal);
 }
 
 
 
 .btn-primary-cs{
-  background-color: #0083A9;
+  background-color: var(--bs-primary-teal);
   color: white;
 }
 
 .btn-primary-cs:hover{
-  background-color: #B5E0F3;
+  background-color: var(--bs-dark-teal);
   color: white;
 }
 
@@ -10923,7 +10968,7 @@ tr > td:first-child {
   font-size: 0.875rem;
   font-style: normal;
   font-weight : 500;
-  color: #B5E0F3;
+  color: var(--bs-pastel-teal);
 }
 tr > td:not(:first-child) {
   text-align: center;
@@ -10935,7 +10980,7 @@ thead, tbody, tfoot, tr, td, th {
 }
 
 .head-title-tb{
-  color: #63E5FF !important;
+  color: var(--bs-light-teal) !important;
 }
 
 .accordion-button:not(.collapsed){
@@ -11016,6 +11061,11 @@ thead, tbody, tfoot, tr, td, th {
   border-radius: 24px;
 }
 
+.bg-dark-teal{
+  background-color: var(--bs-primary-teal);
+  border-radius: 24px;
+}
+
 .bk-light-grey{
   background: #272629;
   padding: 40px;
@@ -11026,6 +11076,10 @@ thead, tbody, tfoot, tr, td, th {
   font-style: normal;
   font-weight: 400;
 } 
+
+.bk-dark-teal{
+  background: var(--bs-dark-teal);
+}
 
 
 .bk-light-blue{
@@ -11063,15 +11117,15 @@ thead, tbody, tfoot, tr, td, th {
 }
 
 .nav-link{
-  color: #B5E0F3;
+  color: var(--bs-pastel-teal);
 }
 
 .nav-link.active{
-  color: #B5E0F3;
+  color: var(--bs-primary-teal);
 }
 
 .nav-link:hover, .nav-link:focus {
-  color: #0083A9 !important;
+  color: var(--bs-dark-teal) !important;
 }
 
 .bg-black-dark{
@@ -11088,7 +11142,7 @@ thead, tbody, tfoot, tr, td, th {
 
 .divider{
   height: 4rem;
-  border-bottom: 2px solid #272629;
+  border-bottom: 6px solid #272629;
 }
 
 .width-image{
@@ -11166,12 +11220,12 @@ thead, tbody, tfoot, tr, td, th {
   width: 24px; /* Veľkosť kruhu */
   height: 24px; /* Veľkosť kruhu */
   padding-bottom: 2px;
-  border: 2px solid #98A2B3; /* Okraj kruhu s farbou */
+  border: 2px solid var(--bs-pastel-teal); /* Okraj kruhu s farbou */
   border-radius: 50%; /* Zakrivené hrany pre kruh */
   display: flex; /* Použijeme flexbox na zarovnanie textu na stred kruhu */
   justify-content: center; /* Zarovnanie textu na stred horizontálne */
   align-items: center; /* Zarovnanie textu na stred vertikálne */
-  color: #98A2B3; /* Farba textu vo vnútri kruhu */
+  color: var(--bs-pastel-teal); /* Farba textu vo vnútri kruhu */
   font-weight: bold; /* Tu môžete prispôsobiť štýl textu podľa vašich potrieb */
   content: "+"; /* Začiatočný text pre symbol + */
 }
@@ -11257,7 +11311,7 @@ button:focus:not(:focus-visible) {
     background-size: 100%;
 }
 
-/*map poin 1 */
+/*map poin 1 Praha*/
 
 .map-point {
     position: absolute;
@@ -11271,7 +11325,7 @@ button:focus:not(:focus-visible) {
   position: absolute;
   width: 15px;
   height: 15px;
-  background-color: #63E5FF;
+  background-color: var(--bs-light-teal);
   border-radius: 50%;
   right: 0;
   top: 0;
@@ -11286,8 +11340,8 @@ button:focus:not(:focus-visible) {
   align-items: center;
   width: 15px;
   height: 15px;
-  border: 2px solid rgb(99 229 255 / 20%);
-  background-color: rgb(99 229 255 / 10%);
+  border: 2px solid rgba(45, 216, 201, 0.2);
+  background-color: rgba(45, 216, 201, 0.1);
   border-radius: 50%;
   transform: translate(50%, -50%);
   opacity: 0;
@@ -11392,6 +11446,7 @@ button:focus:not(:focus-visible) {
 }
 .map-point .map-point__tooltip::after:hover {
   display: block;
+  transition-delay: 0.1s;
 }
 .map-point .map-point__tooltip a {
   font-size: 0.8rem;
@@ -11404,7 +11459,7 @@ button:focus:not(:focus-visible) {
 }
 
 
-/*map point 2 */
+/*map point 2 Poprad*/
 
 .map-point-2 {
     position: absolute;
@@ -11418,7 +11473,7 @@ button:focus:not(:focus-visible) {
   position: absolute;
   width: 15px;
   height: 15px;
-  background-color: #63E5FF;
+  background-color: var(--bs-light-teal);
   border-radius: 50%;
   right: 0;
   top: 0;
@@ -11433,8 +11488,8 @@ button:focus:not(:focus-visible) {
   align-items: center;
   width: 15px;
   height: 15px;
-  border: 2px solid rgb(99 229 255 / 20%);
-  background-color: rgb(99 229 255 / 10%);
+  border: 2px solid rgba(45, 216, 201, 0.2);
+  background-color: rgba(45, 216, 201, 0.1);
   border-radius: 50%;
   transform: translate(50%, -50%);
   opacity: 0;
@@ -11536,6 +11591,107 @@ button:focus:not(:focus-visible) {
   transition-delay: 0.1s;
 }
 
+/* map point 3 - Olomouc */
+.map-point-3 {
+    position: absolute;
+    top: 60%;   
+    left: 4.5%;   
+    width: 50%;
+    height: 100px;
+    display: block;
+}
+
+.map-point-3 .map-point__marker-3 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: var(--bs-light-teal);
+  border-radius: 50%;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+}
+
+.map-point-3 .map-point__marker-radar-3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgba(45, 216, 201, 0.2);
+  background-color: rgba(45, 216, 201, 0.1);
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  opacity: 0;
+  animation: marker-animation-3 3.5s ease-out infinite;
+}
+
+@keyframes marker-animation-3 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.map-point-3 .map-point__tooltip-3 {
+  position: absolute;
+  right: 0.5px;
+  top: -140px;
+  z-index: 3;
+  width: 150px;
+  background-color: #272629;
+  box-shadow: 0 0 30px rgba(30, 38, 56, 0.15);
+  text-align: center;
+  border-radius: 4px;
+  padding: 3% 0;
+  transform: translate(50%);
+  margin-top: 12px;
+  display: none;
+  transition: 0.5s;
+}
+
+.map-point-3 .map-point__tooltip-3 h3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #E7E7E7;
+}
+
+.map-point-3 .map-point__tooltip-3 p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #E7E7E7;
+}
+
+.map-point-3 .map-point__tooltip-3::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 45%;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 5px solid #272629;
+}
+
+.map-point-3:hover .map-point__tooltip-3 {
+  display: block;
+  transition-delay: 0.1s;
+}
+
 
 footer{
   color: #DCDCDC;
@@ -11559,7 +11715,7 @@ footer a{
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  color: #B5E0F3;
+  color: var(--bs-pastel-teal);
   text-decoration: none;
 }
 
@@ -11568,7 +11724,7 @@ footer a{
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  color: #B5E0F3;
+  color: var(--bs-pastel-teal);
   text-decoration: none;
 }
 
@@ -11669,4 +11825,25 @@ footer a{
 .promo-video {
     border-radius: 14px;
     filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+.img-wrapper {
+  width: 100%;
+  max-width: 200px;      /* max šířka obrázku */
+  aspect-ratio: 3 / 2;   /* stejné proporce */
+  margin: 0 auto;        /* vycentrování horizontálně */
+  padding: 8px;          /* drobný vnější odstup */
+  display: flex;         
+  align-items: center;   /* vertikální centrování obsahu */
+  justify-content: center; /* horizontální centrování obsahu */
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* logo se nedeformuje */
+  border-radius: 24px;
+  /* background: #fff;      pozadí pro průhledné PNG/JPEG */
+  padding: 10px;         /* “vnitřní” odsazení obrázku */
+  box-sizing: border-box; /* padding se počítá dovnitř */
 }
