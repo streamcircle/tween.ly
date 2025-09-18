@@ -11707,6 +11707,10 @@ footer a{
   text-decoration: none !important;
 }
 
+.learn-more{
+    color: white;
+}
+
 .contact-email{
     color: white;
 }
