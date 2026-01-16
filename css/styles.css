@@ -24,6 +24,9 @@
   --bs-light-teal: #2DD8C9;
   --bs-primary-teal: #15AC9E;
   --bs-dark-teal: #007A6F;
+  --bs-light-blue: #0EB0DC;
+  --bs-primary-blue: #0B95BB;
+  --bs-dark-blue: #007A98;
   --bs-cyan: #0dcaf0;
   --bs-black: #000;
   --bs-white: #fff;
@@ -10888,22 +10891,22 @@ textarea.form-control-lg {
 
 
 .btn-link-cs{
-  color: var(--bs-pastel-teal);
+  color: var(--bs-pastel-blue);
 }
 
 .btn-link-cs:hover{
-  color: var(--bs-dark-teal);
+  color: var(--bs-dark-blue);
 }
 
 
 
 .btn-primary-cs{
-  background-color: var(--bs-primary-teal);
+  background-color: var(--bs-primary-blue);
   color: white;
 }
 
 .btn-primary-cs:hover{
-  background-color: var(--bs-dark-teal);
+  background-color: var(--bs-dark-blue);
   color: white;
 }
 
@@ -10985,7 +10988,7 @@ thead, tbody, tfoot, tr, td, th {
 }
 
 .head-title-tb{
-  color: var(--bs-light-teal) !important;
+  color: var(--bs-light-blue) !important;
 }
 
 .accordion-button:not(.collapsed){
@@ -11067,7 +11070,7 @@ thead, tbody, tfoot, tr, td, th {
 }
 
 .bg-dark-teal{
-  background-color: var(--bs-primary-teal);
+  background-color: var(--bs-primary-blue);
   border-radius: 24px;
 }
 
@@ -11083,7 +11086,7 @@ thead, tbody, tfoot, tr, td, th {
 } 
 
 .bk-dark-teal{
-  background: var(--bs-dark-teal);
+  background: var(--bs-dark-blue);
 }
 
 
@@ -11122,15 +11125,15 @@ thead, tbody, tfoot, tr, td, th {
 }
 
 .nav-link{
-  color: var(--bs-pastel-teal);
+  color: var(--bs-white);
 }
 
 .nav-link.active{
-  color: var(--bs-primary-teal);
+  color: var(--bs-primary-blue);
 }
 
 .nav-link:hover, .nav-link:focus {
-  color: var(--bs-dark-teal) !important;
+  color: var(--bs-dark-blue) !important;
 }
 
 .bg-black-dark{
