@@ -632,6 +632,11 @@ progress {
   display: block;
 }
 
+.img-container img[src$="logo_stream_circle_transparent.svg"] {
+  width: 80%;
+  height: auto;
+}
+
 .figure {
   display: inline-block;
 }
