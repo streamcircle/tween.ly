@@ -49,6 +49,11 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --bs-sky-300:#99DCF0;
+  --bs-mint:#92E3DE;
+  --bs-light-mint:#BDFFC7;
+  --bs-light-gray-200:#E2E4E5;
+  --bs-light-gray-100:#F2F3F4;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -69,7 +74,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #1F1E1F;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -122,7 +127,6 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 500;
   line-height: 1.2;
 }
 
@@ -253,7 +257,7 @@ sup {
 
 a {
   color: var(--bs-link-color);
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: var(--bs-link-hover-color);
@@ -8119,7 +8123,12 @@ textarea.form-control-lg {
 
 .text-pastel-teal {
   --bs-text-opacity: 1;
-  color: var(--bs-pastel-teal) !important;
+  color: var(--bs-mint) !important;
+}
+
+.text-light-mint {
+  --bs-text-opacity: 1;
+  color: var(--bs-light-mint) !important;
 }
 
 .text-light-teal {
@@ -10889,13 +10898,103 @@ textarea.form-control-lg {
 
 /*Custom style*/
 
+/* Typography (web) */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: "Manrope", var(--bs-font-sans-serif);
+  font-weight: 400;
+}
+
+h1, .h1 {
+  font-size: 64px;
+  color: var(--bs-white);
+}
+
+h2, .h2 {
+  font-size: 48px;
+  color: var(--bs-sky-300);
+}
+
+h3, .h3 {
+  font-size: 36px;
+  color: var(--bs-sky-300);
+}
+
+h4, .h4 {
+  font-size: 28px;
+  color: var(--bs-light-gray-200);
+  padding-bottom: 0.5rem;
+}
+
+h5, .h5 {
+  font-size: 22px;
+  color: var(--bs-mint);
+}
+
+h6, .h6 {
+  font-size: 18px;
+  color: var(--bs-light-gray-200);
+}
+
+p, .paragraph {
+  font-family: "Inter", var(--bs-font-sans-serif);
+  font-size: 16px;
+  font-weight: 400;
+  color:var(--bs-light-gray-100);
+}
+
+a, .link {
+  font-family: "Inter", var(--bs-font-sans-serif);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--bs-light-mint);
+}
+
+button, .btn {
+  font-family: "Inter", var(--bs-font-sans-serif);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--bs-white);
+}
+
+input,
+textarea,
+select {
+  font-family: "Inter", var(--bs-font-sans-serif);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--bs-white);
+}
+
+.accent-highlight {
+  font-family: "Manrope", var(--bs-font-sans-serif);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--bs-light-mint);
+}
+
+.link-light-mint {
+  color: var(--bs-light-mint)
+}
+.link-light-mint:hover {
+  color: var(--bs-mint)
+}
+
 
 .btn-link-cs{
-  color: var(--bs-pastel-blue);
+  color: var(--bs-white);
+  border-radius: 8px 0 0 4px;
+  border: 1px solid var(--bs-white);
 }
 
 .btn-link-cs:hover{
   color: var(--bs-dark-blue);
+  border-radius: 8px 0 0 4px;
+  border: 1px solid var(--bs-dark-teal);
 }
 
 
@@ -10903,26 +11002,12 @@ textarea.form-control-lg {
 .btn-primary-cs{
   background-color: var(--bs-primary-blue);
   color: white;
+  border-radius: 0 4px 12px 0;
 }
 
 .btn-primary-cs:hover{
   background-color: var(--bs-dark-blue);
   color: white;
-}
-
-
-h3{
-  font-size: 2.25rem;
-  font-style: normal;
-  font-weight: 600;
-  color: #B5E0F3;
-}
-
-h4{
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 600;
-  padding-bottom: 0.5rem;
 }
 
 
@@ -10976,7 +11061,7 @@ tr > td:first-child {
   font-size: 0.875rem;
   font-style: normal;
   font-weight : 500;
-  color: var(--bs-pastel-teal);
+  color: var(--bs-white);
 }
 tr > td:not(:first-child) {
   text-align: center;
@@ -10988,7 +11073,7 @@ thead, tbody, tfoot, tr, td, th {
 }
 
 .head-title-tb{
-  color: var(--bs-light-blue) !important;
+  color: var(--bs-mint) !important;
 }
 
 .accordion-button:not(.collapsed){
@@ -11071,13 +11156,13 @@ thead, tbody, tfoot, tr, td, th {
 
 .bg-dark-teal{
   background-color: var(--bs-primary-blue);
-  border-radius: 24px;
+  border-radius: 40px 10px 60px 10px;
 }
 
 .bk-light-grey{
   background: #272629;
   padding: 40px;
-  border-radius: 24px;
+  border-radius: 40px 10px 60px 10px;
 }
 
 .bk-light-grey p{
@@ -11087,6 +11172,7 @@ thead, tbody, tfoot, tr, td, th {
 
 .bk-dark-teal{
   background: var(--bs-dark-blue);
+  border-radius: 40px 0px 60px 0px;
 }
 
 
@@ -11228,12 +11314,12 @@ thead, tbody, tfoot, tr, td, th {
   width: 24px; /* Veľkosť kruhu */
   height: 24px; /* Veľkosť kruhu */
   padding-bottom: 2px;
-  border: 2px solid var(--bs-pastel-teal); /* Okraj kruhu s farbou */
+  border: 2px solid var(--bs-light-mint); /* Okraj kruhu s farbou */
   border-radius: 50%; /* Zakrivené hrany pre kruh */
   display: flex; /* Použijeme flexbox na zarovnanie textu na stred kruhu */
   justify-content: center; /* Zarovnanie textu na stred horizontálne */
   align-items: center; /* Zarovnanie textu na stred vertikálne */
-  color: var(--bs-pastel-teal); /* Farba textu vo vnútri kruhu */
+  color: var(--bs-light-mint); /* Farba textu vo vnútri kruhu */
   font-weight: bold; /* Tu môžete prispôsobiť štýl textu podľa vašich potrieb */
   content: "+"; /* Začiatočný text pre symbol + */
 }
@@ -11288,6 +11374,7 @@ thead, tbody, tfoot, tr, td, th {
 
 .menu-buttons {
     margin-left: auto;
+    gap: 4px;
 }
 
 button:focus:not(:focus-visible) {
@@ -11709,15 +11796,17 @@ footer a{
   color: #DCDCDC;
 }
 
+footer a:hover{
+  color: var(--bs-mint);
+}
+
 .social-media a{
   margin:5px;
   text-align: right !important;
   text-decoration: none !important;
+  color: var(--bs-mint);
 }
 
-.contact-email{
-    color: white;
-}
 
 .btn-link{
   font-size: 16px;
