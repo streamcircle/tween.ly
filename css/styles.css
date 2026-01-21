@@ -549,7 +549,6 @@ progress {
 
 .display-5 {
   font-size: calc(1.425rem + 2.1vw);
-  font-weight: 300;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
@@ -7992,9 +7991,6 @@ textarea.form-control-lg {
   font-weight: 400 !important;
 }
 
-.fw-bold {
-  font-weight: 700 !important;
-}
 
 .fw-semibold {
   font-weight: 600 !important;
@@ -11089,14 +11085,14 @@ thead, tbody, tfoot, tr, td, th {
 .pricing-option__header span{
   font-size: 1.25rem;
   font-style: normal;
-  font-weight: 600;
+
   color: #63E5FF;
 }
 
 .pricing-option__header .h5{
   font-size: 2.5rem;
   font-style: normal;
-  font-weight: 600;
+
   color: #63E5FF;
 }
 
@@ -11203,7 +11199,6 @@ thead, tbody, tfoot, tr, td, th {
 .display-5{
   font-size: 4.5rem;  
   font-style: normal;
-  font-weight: 600;
 }
 
 .headline-pd{
