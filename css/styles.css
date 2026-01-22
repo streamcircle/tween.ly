@@ -259,9 +259,29 @@ a {
   color: var(--bs-link-color);
   text-decoration: none;
 }
-a:hover {
-  color: var(--bs-link-hover-color);
-  cursor: pointer !important;
+a[href] {
+  cursor: pointer;
+}
+
+:where(a:not(:has(*)):not(.btn)) {
+  position: relative;
+}
+
+:where(a:not(:has(*)):not(.btn))::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+:where(a:not(:has(*)):not(.btn)):is(:hover, :focus-visible)::after {
+  transform: scaleX(1);
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -549,7 +569,6 @@ progress {
 
 .display-5 {
   font-size: calc(1.425rem + 2.1vw);
-  font-weight: 300;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
@@ -7992,9 +8011,6 @@ textarea.form-control-lg {
   font-weight: 400 !important;
 }
 
-.fw-bold {
-  font-weight: 700 !important;
-}
 
 .fw-semibold {
   font-weight: 600 !important;
@@ -10980,9 +10996,6 @@ select {
 .link-light-mint {
   color: var(--bs-light-mint)
 }
-.link-light-mint:hover {
-  color: var(--bs-mint)
-}
 
 
 .btn-link-cs{
@@ -10994,7 +11007,7 @@ select {
 .btn-link-cs:hover{
   color: var(--bs-dark-blue);
   border-radius: 8px 0 0 4px;
-  border: 1px solid var(--bs-dark-teal);
+  border: 1px solid var(--bs-dark-blue);
 }
 
 
@@ -11089,14 +11102,14 @@ thead, tbody, tfoot, tr, td, th {
 .pricing-option__header span{
   font-size: 1.25rem;
   font-style: normal;
-  font-weight: 600;
+
   color: #63E5FF;
 }
 
 .pricing-option__header .h5{
   font-size: 2.5rem;
   font-style: normal;
-  font-weight: 600;
+
   color: #63E5FF;
 }
 
@@ -11203,7 +11216,6 @@ thead, tbody, tfoot, tr, td, th {
 .display-5{
   font-size: 4.5rem;  
   font-style: normal;
-  font-weight: 600;
 }
 
 .headline-pd{
@@ -11219,7 +11231,7 @@ thead, tbody, tfoot, tr, td, th {
 }
 
 .nav-link:hover, .nav-link:focus {
-  color: var(--bs-dark-blue) !important;
+  color: var(--bs-white) !important;
 }
 
 .bg-black-dark{
@@ -11794,10 +11806,6 @@ footer{
 
 footer a{
   color: #DCDCDC;
-}
-
-footer a:hover{
-  color: var(--bs-mint);
 }
 
 .social-media a{
