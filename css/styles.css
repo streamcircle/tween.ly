@@ -11007,7 +11007,7 @@ select {
 .btn-link-cs:hover{
   color: var(--bs-dark-blue);
   border-radius: 8px 0 0 4px;
-  border: 1px solid var(--bs-dark-teal);
+  border: 1px solid var(--bs-dark-blue);
 }
 
 
