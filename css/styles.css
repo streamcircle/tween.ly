@@ -263,11 +263,11 @@ a[href] {
   cursor: pointer;
 }
 
-:where(a:not(:has(*))) {
+:where(a:not(:has(*)):not(.btn)) {
   position: relative;
 }
 
-:where(a:not(:has(*)))::after {
+:where(a:not(:has(*)):not(.btn))::after {
   content: "";
   position: absolute;
   left: 0;
@@ -280,7 +280,7 @@ a[href] {
   transition: transform 0.25s ease;
 }
 
-:where(a:not(:has(*))):is(:hover, :focus-visible)::after {
+:where(a:not(:has(*)):not(.btn)):is(:hover, :focus-visible)::after {
   transform: scaleX(1);
 }
 
