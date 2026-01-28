@@ -227,7 +227,7 @@ table {
    ============================================ */
 .grid {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .grid--cols-2 {
@@ -294,6 +294,7 @@ table {
 .navbar__brand img {
   width: 174px;
   height: auto;
+  margin-right: var(--space-3);
 }
 
 .navbar__toggle {
@@ -381,10 +382,6 @@ table {
   color: var(--color-white);
 }
 
-.navbar__link--active {
-  color: var(--color-blue-primary);
-}
-
 .navbar__actions {
   display: flex;
   flex-direction: column;
@@ -470,13 +467,13 @@ table {
 
 .btn--outline {
   color: var(--color-white);
-  border: 1px solid var(--color-white);
+  border: 0.5px solid var(--color-white);
   border-radius: var(--radius-md) 0 0 var(--radius-sm);
 }
 
 .btn--outline:hover {
-  color: var(--color-blue-dark);
-  border-color: var(--color-blue-dark);
+  color: var(--color-sky);
+  border-color: var(---color-sky);
 }
 
 .btn--link {
@@ -511,6 +508,9 @@ table {
 }
 
 .section__header {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   margin-bottom: var(--space-5);
 }
@@ -549,6 +549,9 @@ table {
 .hero__title {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   margin-bottom: 0.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero__subtitle {
@@ -703,6 +706,7 @@ table {
 .pricing__header {
   text-align: center;
   padding: 1.5rem;
+  font-weight: 400;
 }
 
 .pricing__header img {
@@ -730,7 +734,7 @@ table {
 
 .pricing__category {
   color: var(--color-mint) !important;
-  font-weight: 700;
+  font-weight: 400;
   background: transparent !important;
 }
 
@@ -939,11 +943,6 @@ table {
   color: #dcdcdc;
 }
 
-.footer a {
-  color: #dcdcdc;
-  font-weight: 400;
-}
-
 .footer a:hover {
   color: var(--color-teal-pastel);
 }
@@ -1000,8 +999,8 @@ table {
    15. Component - Divider
    ============================================ */
 .divider {
-  height: 4rem;
-  border-bottom: 6px solid var(--color-gray-dark);
+  height: 2rem;
+  border-bottom: 4px solid var(--color-gray-dark);
 }
 
 /* ============================================
